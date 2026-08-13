@@ -10,7 +10,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
       - ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
-      - "5432:5432"
+      - "5433:5432"
     networks:
       - airflow_net
 
@@ -45,7 +45,7 @@ services:
     volumes:
       - ./dags:/opt/airflow/dags
     ports:
-      - "8080:8080"
+      - "8083:8080"
     command: >
       bash -c "
       airflow db migrate &&
@@ -72,3 +72,4 @@ volumes:
 # Define shared Docker network
 networks:
   airflow_net:
+
