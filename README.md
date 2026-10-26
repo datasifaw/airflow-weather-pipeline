@@ -1,12 +1,17 @@
 # Airflow Weather Data Pipeline
 
+
 Projet de Data Engineering réalisé avec Apache Airflow, Docker, PostgreSQL, pgAdmin, Metabase et l’API OpenWeatherMap
+
 
 ## Objectif
 
+
 Construire un pipeline ETL automatisé qui récupère des données météorologiques depuis l’API OpenWeatherMap, les stocke dans PostgreSQL et les visualise dans Metabase.
 
+
 ## Architecture
+
 
 
 ```text
